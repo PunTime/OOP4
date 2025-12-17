@@ -1,10 +1,17 @@
-﻿namespace OOP4
+﻿using static System.Net.Mime.MediaTypeNames;
+
+namespace OOP4
 {
-    internal class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        [STAThread]
+        static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            /* Стандартний вхід у WinForms програму */
+            ApplicationConfiguration.Initialize();
+
+            /* Запуск першої форми з вибором фігури */
+            Application.Run(new FormSelect());
         }
     }
 }
