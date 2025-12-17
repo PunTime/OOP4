@@ -1,5 +1,4 @@
-﻿using static System.Net.Mime.MediaTypeNames;
-
+﻿
 namespace OOP4
 {
     internal static class Program
